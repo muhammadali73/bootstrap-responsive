@@ -23,7 +23,7 @@
 .hero-img img{
     width: 600px;
 }
-.rounded-pill{
+.bbtt{
     background-color: #0d9787;
     width: 190px;
     height: 60px;
@@ -31,7 +31,7 @@
     color: white;
     border: 2px solid #008374;
 }
-.rounded-pill:hover{
+.bbtt:hover{
     border: 2px solid #ffffff8e;
     background-color: #0d9787;
 }
@@ -51,11 +51,8 @@
 .card-1{
     background-color: #0d9787;
     height: 250px;
-    margin-top: 32px;
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
+    margin-top:32px;
+    transform: translateY(-40px);
 }
 .card-1:hover{
     background-color: #0aac99;
@@ -84,16 +81,134 @@
 .bi-check-circle-fill{
     color: #008374;
 }
-@keyframes fadein {
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    from{
-        transform: translateY(20px);
-        opacity: 0;
-    }
+.images{
+    overflow: hidden;
 }
+.images img{
+    transition: scale .5s;
+}
+.images img:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.srs{
+    width: 70px;
+    height: 40px;
+    margin-left: 87px;
+}
+.numbers{
+    color: #008374;
+    font-weight: bold;
+    font-size: 40px;
+}
+.black{
+    margin-left: 78px;
+    color: black;
+}
+.cn-img{
+        height: auto;
+    display: block;
+    width: 100%;
+    height: 550px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    background-color: #008374;
+    height: 550px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Adjust the color to your preference */
+    opacity: 0.5; /* Adjust the opacity to your preference */
+  }
+  .text-body{
+    position: absolute;
+    top: 25%;
+  }
+  .text-body p{
+    margin: 0 32px;
+  }
+  .botton{
+    align-items: center;
+    justify-content: center;
+  }
+  .video-btn{
+    background-color: #008374;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .services-color{
+    background-color: #F6F6F6;
+  }
+  .span-hu{
+    border-bottom: 4px solid #008374;
+  }
+  .btn-img{
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-img button{
+    border: 3px solid #fff;
+    width: 200px;
+    height: 50px;
+  }
+  .btn-img button:hover{
+    background-color: #008374;
+    
+  }
+  .font{
+    font-size: 55px;
+    z-index: 10;
+  }
+  .read{
+    color: #008374;
+  }
+  .read-arrow{
+    color: #008374;
+  }
+  .card-4{
+    border: none;
+  }
+  .card-head{
+    width: 212px;
+  }
+  .card-4:hover .card-head{
+    border-bottom: 3px solid #008374;
+  }
+  .ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.26);
+    display: inline-block;
+    transform: translate(-30px , 10px);
+    transition: background-color .5s;
+  }
+  .card-4:hover .ball{
+    background-color: #008374a2;
+  }
+ .card{
+    cursor: pointer;
+ }
+ .mm{
+    border-bottom: 3px solid #008374;
+ }
+ .carousel,.carousel-inner{
+    height: 300px;
+ }
+ .carousel-indicators button.active {
+    background-color: black; 
+  }
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
 @media screen and (min-width:1200px) and (max-width:2500px) {
     .nav-link:hover{
     color: #fff;
