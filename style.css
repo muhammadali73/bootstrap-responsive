@@ -1,0 +1,110 @@
+*{
+    color: #fff;
+}
+.navbar{
+    background-color: #008374;
+    z-index: 10;
+    box-shadow: .5px .5px 30px rgba(0,0,0,0.3);
+}
+.nav-link{
+    color: #ffffff8e;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 4px;
+
+}
+.nav-link:hover{
+    color: #fff;
+}
+.hero{
+    background-color: #008374;
+    height: 100vh;
+}
+.hero-img img{
+    width: 600px;
+}
+.rounded-pill{
+    background-color: #0d9787;
+    width: 190px;
+    height: 60px;
+    letter-spacing: 2px;
+    color: white;
+    border: 2px solid #008374;
+}
+.rounded-pill:hover{
+    border: 2px solid #ffffff8e;
+    background-color: #0d9787;
+}
+.btn-2{
+    background-color: #008374;
+    border: none;
+    margin: 0 20px;
+}
+.bi-play-circle{
+    position: relative;
+    top: 5px;
+    color: #ffffff8e;
+}
+.btn-2:hover .bi-play-circle{
+    color: #fff;
+}
+.card-1{
+    background-color: #0d9787;
+    height: 250px;
+    margin-top: 32px;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.card-1:hover{
+    background-color: #0aac99;
+    cursor: pointer;
+}
+.card-body-1:hover i{
+    color: #fff;
+}
+.hero-2{
+    background-color: #008374;
+}
+.card-body-1 i{
+    font-size: 50px;
+    color: #ffffff8e;
+}
+.out{
+    border-bottom: 4px solid #008374;
+}
+.card-2{
+    border: none;
+}
+.card-body-2 p{
+    color: grey;
+    font-size: 17px;
+}
+.bi-check-circle-fill{
+    color: #008374;
+}
+@keyframes fadein {
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:2500px) {
+    .nav-link:hover{
+    color: #fff;
+    border-bottom: 2px solid #F85A40;
+}
+.nav-link:focus{
+    border-bottom: 2px solid #F85A40;
+    color: #fff;
+    
+}
+.hero-row{
+    top: 150px;
+}
+}
