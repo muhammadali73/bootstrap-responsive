@@ -91,10 +91,13 @@
     scale: 1.2;
     cursor: pointer;
 }
+.images img:focus{
+  scale: 1.2;
+}
 .srs{
-    width: 70px;
+    width: 80px;
     height: 40px;
-    margin-left: 87px;
+    margin: 5px 45px;
 }
 .numbers{
     color: #008374;
@@ -175,6 +178,7 @@
   }
   .card-4{
     border: none;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.137);
   }
   .card-head{
     width: 212px;
@@ -186,7 +190,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: rgba(128, 128, 128, 0.26);
+    background-color: rgba(128, 128, 128, 0);
     display: inline-block;
     transform: translate(-30px , 10px);
     transition: background-color .5s;
@@ -200,14 +204,30 @@
  .mm{
     border-bottom: 3px solid #008374;
  }
- .carousel,.carousel-inner{
-    height: 300px;
- }
- .carousel-indicators button.active {
-    background-color: black; 
+  .imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .carousel-control-prev, .carousel-control-next {
-    display: none;
+  .km{
+    height: 75px;
+    width: 75px;
+  }
+  .fs-7{
+    font-size: 23px;
+  }
+  .ll{
+    color: #008374;
+  }
+  .w{
+    width: 90%;
+  }
+  .card-5{
+    box-shadow: 20px 30px 5px rgba(0, 0, 0, 0.103);
+  }
+  .card-6{
+    border: none;
+    background-color: #fff;
   }
 @media screen and (min-width:1200px) and (max-width:2500px) {
     .nav-link:hover{
@@ -222,4 +242,23 @@
 .hero-row{
     top: 150px;
 }
+}
+@media screen and (max-width:1199px) {
+  .hero-text{
+    position: relative;
+    top: 45px;
+  }
+}
+@media screen and (max-width:360px) {
+  .text-body{
+   top: 13%; 
+  }
+}
+@media screen and (max-width:991px) {
+  .card-4{
+    margin: 10px 0;
+  }
+  .card-5{
+    margin: 10px 0;
+  }
 }
